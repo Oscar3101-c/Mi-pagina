@@ -1,14 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Feliz Día Mamá</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background: linear-gradient(135deg, #ffe4e6, #fbcfe8);
       height: 100vh;
+      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,8 +21,8 @@
     }
 
     .scene {
-      width: 320px;
-      height: 220px;
+      width: 380px;
+      height: 280px;
       perspective: 1000px;
     }
 
@@ -39,26 +44,28 @@
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      border-radius: 10px;
+      border-radius: 16px;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
     }
 
     .card__face--front {
       background: #db2777;
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: bold;
+      text-align: center;
     }
 
     .card__face--back {
       background: white;
       color: #333;
       transform: rotateY(180deg);
-      padding: 1rem;
-      box-sizing: border-box;
       overflow-y: auto;
+      font-size: 1rem;
     }
 
     h2 {
@@ -68,7 +75,7 @@
 
     p {
       font-size: 0.95rem;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     strong {
@@ -84,15 +91,18 @@
       Haz clic para abrir la carta
     </div>
     <div class="card__face card__face--back">
-      <h2>Feliz día mamá</h2>
-      <p>
-        Mami, quiero desearte un <strong>FELIZ DÍA DE LA MADRE</strong>, quiero decirte que eres la mejor mamá del mundo,
-        gracias por todo lo que haces por mí y mis hermanos, gracias por siempre estar ahí para mí y no dejarme solo,
-        por aguantar mi terquedad.<br><br>
-        Perdóname cuando te contesto. Gracias, mami, por todo lo que me has dado, por los consejos que me has dado y por
-        preocuparte por nosotros incluso más que por ti.<br><br>
-        Solo quiero decirte, mami, que <strong>TE AMO MUCHOO</strong> y que eres todo para mí. <strong>TE QUIERO MAMI</strong> ❤️
-      </p>
+      <div>
+        <h2>Feliz día mamá</h2>
+        <p>
+          Mami, quiero desearte un <strong>FELIZ DÍA DE LA MADRE</strong>. Eres la mejor mamá del mundo.  
+          Gracias por todo lo que haces por mí y mis hermanos, por estar ahí y no dejarme solo.  
+          <br><br>
+          Perdóname cuando te contesto mal. Gracias por los consejos y por preocuparte tanto por nosotros.  
+          <br><br>
+          Solo quiero que sepas que <strong>TE AMO MUCHOO</strong> y que eres todo para mí.  
+          <strong>TE QUIERO MAMI</strong>.
+        </p>
+      </div>
     </div>
   </div>
 </div>
